@@ -1,0 +1,38 @@
+.avivEditAdd {
+  .form-group {
+    text-align: center;
+  }
+
+  .aviv-center {
+    img {
+      padding: 1em;
+    }
+  }
+
+  mat-form-field {
+    width: 20em;
+  }
+
+  .btn-act {
+    button {
+      margin: 3em;
+    }
+  }
+
+  .ExternalCenter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .internalCenter {
+      top: 15em;
+      position: fixed;
+      padding-top: 1em;
+      border: 1px solid #cecece;
+      box-shadow: 1px 1px 10px;
+      background-color: rgba(255,255,255, 0.9);
+    }
+  }
+}

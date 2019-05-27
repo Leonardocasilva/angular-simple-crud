@@ -1,0 +1,32 @@
+<div class="container avivList">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 add">
+      <button mat-stroked-button color="primary" routerLink="/adicionar"><i class="far fa-plus-square"> Adicionar</i></button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Login</th>
+            <th>Editar</th>
+            <th>Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let User of Users">
+              <td>{{User.nome}}</td>
+              <td>{{User.email}}</td>
+              <td>{{User.user_login}}</td>
+              <td><button mat-stroked-button color="primary" routerLink="/editar/{{User.id}}"><i class="far fa-edit"></i></button></td>
+              <td><button mat-stroked-button color="warn" (click)="Remove(User.id)"><i class="fas fa-trash"></i></button></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
